@@ -7,9 +7,9 @@ import { useNotifications } from '../context/NotificationContext';
 import DashboardLayout from '../components/DashboardLayout';
 import StockStatsCard from '../components/StockStatsCard';
 import LineChart from '../components/LineChart';
+import { API_URL, SOCKET_URL } from '../config';
 
-const API_URL = 'http://localhost:3001/api';
-const SOCKET_URL = 'http://localhost:3001';
+// URL constants imported from config
 
 function DashboardPage() {
     const { user, token } = useAuth();

@@ -3,9 +3,10 @@ import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 import { useNotifications } from '../context/NotificationContext';
 import DashboardLayout from '../components/DashboardLayout';
+import { API_URL } from '../config';
 import StockSelector from '../components/StockSelector';
 
-const API_URL = 'http://localhost:3001/api';
+// URL constants imported from config
 
 const StocksPage = () => {
     const { user, token } = useAuth();

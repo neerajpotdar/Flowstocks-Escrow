@@ -4,11 +4,11 @@ import { io } from 'socket.io-client';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 import { useNotifications } from '../context/NotificationContext';
+import { API_URL, SOCKET_URL } from '../config';
 import LineChart from '../components/LineChart';
 import '../stock-detail.css';
 
-const SOCKET_URL = 'http://localhost:3001';
-const API_URL = 'http://localhost:3001/api';
+// URL constants imported from config
 
 // Stock descriptions and company info
 const STOCK_INFO = {
